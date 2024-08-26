@@ -126,24 +126,46 @@ button{
     text-decoration: none;
     text-align: center;
 }
-
-@media (max-width:1400px){
-    
-}
-@media (max-width: 1024px){
-
-}
-@media (max-width:861px){
-
-}
+/*Responsive Design*/
 @media (max-width: 768px){
     .container{
         height: 200vh;
+        gap:50px;
+        padding: 50px 0px;
+        flex-direction: column;
+    }
+    .code{
+        width: 500px;
+        height: 1500px;
+    }
+    .output{
+        width: 500px;
+        height: 1500px;
+    }
+}
+@media (max-width:480px){
+    .container{
+        height: 180vh;
+        gap:50px;
+        padding: 50px 0px;
+        flex-direction: column;
+    }
+    .code{
+        width: 400px;
+        height: 800px;
+    }
+    .output{
+        width: 400px;
+        height: 700px;
+    }
+    .form-group-button{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap:50px;
-        padding: 50px 0px;
+    }
+    #btn-save{
+        margin:10px 10px 0px 0px;
+        width: 200px;
     }
 }
